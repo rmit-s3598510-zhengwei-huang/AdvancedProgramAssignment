@@ -1,0 +1,10 @@
+import java.util*;
+
+public class Ozlympic {
+	
+	public static void main(String[]args) throws Exception{
+		Driver driver = new Driver();
+		driver.manu();
+	}
+
+}
