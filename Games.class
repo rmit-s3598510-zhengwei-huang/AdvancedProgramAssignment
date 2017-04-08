@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class Games {
+	Scanner sc = new Scanner ( System.in);
+	public void GameMenu(){
+		System.out.println("Please select a game");
+		System.out.println("===================================");
+		System.out.println("1. Swimming Game");
+		System.out.println("2. Cycling Game");
+		System.out.println("3. Running Game");
+		int type = sc.nextInt();
+		switch(type){
+		case 1:
+			swimming();
+			break;
+		case 2:
+			cycling();
+			break;
+		case 3:
+			running();
+			break;
+		}
+		
+	}
+	public void swimming(){
+		System.out.println( "Swimming Game");
+		
+	}
+	
+	public void cycling(){
+		System.out.println( "Cycling Game");
+		
+	}
+
+	public void running(){
+		System.out.println( "Running Game");
+	
+	}
+
+}
