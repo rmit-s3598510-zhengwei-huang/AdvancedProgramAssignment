@@ -1,0 +1,63 @@
+import java.util.*;
+
+public class Driver {
+	
+	public void manu() throws Exception{
+		Scanner sc = new Scanner(System.in);
+		int userAnswer = 0;
+		
+		System.out.println( "Olympic Game");
+		System.out.println( "===================================");
+		System.out.println( "1.	Select a game to run");
+		System.out.println( "2.	Predict the winner of the game	");
+		System.out.println( "3.	Start the game");
+		System.out.println( "4.	Display	the final results of all games");
+		System.out.println( "5.	Display	the points of all athletes");
+		System.out.println( "6.	Exit");
+		System.out.println( " ");
+		System.out.println( " ");
+
+		while(true){ // this while loop to check if the user entered the right code.
+			System.out.println( "Enter an option:");
+			try{
+				userAnswer = Integer.parseInt(sc.nextLine().trim());
+			}catch (NumberFormatException nfe){
+				System.out.println("You should enter a integer number!");
+				continue;
+			}finally{
+				if(userAnswer < 0 || userAnswer > 6){
+					System.out.println("You sould enter a number between 0 to 6!");
+					continue;
+					}			
+				}
+			break;
+			}
+		
+		
+		switch(userAnswer){
+		case 1:
+			System.out.println("This is for selecting a game");
+			break;
+		case 2:
+			System.out.println("This is for predicting a winner");
+			break;
+		case 3:
+			System.out.println("This is for starting a game");
+			break;
+		case 4:
+			System.out.println("This is for display the final results of all games");
+			break;
+		case 5:
+			System.out.println("This is for display the points of all athletes");
+			break;
+		case 6:
+			System.exit(0);
+		}
+		
+		
+	}
+		
+}
+
+
+
